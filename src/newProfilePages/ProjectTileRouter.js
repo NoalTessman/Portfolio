@@ -6,7 +6,7 @@ export default class ProjectTileRouter extends Component {
 
         return (
             <div className="ProjectTile" id={this.props.id}>
-                <Link href={this.props.link} target={this.props.target?this.props.target:`_blank`} alt={this.props.id}>
+                <Link href={this.props.link} alt={this.props.id}>
                     {this.props.title}
                 </Link>
             </div>
