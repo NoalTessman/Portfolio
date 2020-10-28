@@ -317,7 +317,7 @@ body{
     justify-content: center;
     padding-top:40px;
     font-size: 10em;
-    font-family: pachom script;
+    font-family: "pachom script";
     text-shadow: #1e4242 10px 5px;
 }
 .ContactDescription{
