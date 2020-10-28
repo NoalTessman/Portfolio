@@ -1,0 +1,59 @@
+<svg id="Component_1_1" data-name="Component 1 – 1" xmlns="http://www.w3.org/2000/svg" width="2425.777" height="1842.08" viewBox="0 0 2425.777 1842.08">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #75ecff;
+      }
+
+      .cls-2 {
+        fill: #ff36e5;
+      }
+
+      .cls-3 {
+        fill: #ffc2c3;
+      }
+
+      .cls-4 {
+        fill: #c6f7ff;
+      }
+
+      .cls-5 {
+        fill: #fff;
+        stroke: #707070;
+        mix-blend-mode: soft-light;
+        isolation: isolate;
+      }
+
+      .cls-6 {
+        stroke: none;
+      }
+
+      .cls-7 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <path id="Path_2" data-name="Path 2" class="cls-1" d="M.145,0H902.888V893.548L870.744,922.9.145,893.548-16.732,31.179Z" transform="translate(738 407.08)"/>
+  <ellipse id="Ellipse_1" data-name="Ellipse 1" class="cls-2" cx="525.5" cy="481.5" rx="525.5" ry="481.5" transform="translate(0 879.08)"/>
+  <path id="Path_1" data-name="Path 1" class="cls-3" d="M0,0,33.063-22.566,907,0l12.141,864.91L907,896H0Z" transform="translate(691 458.08)"/>
+  <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-4" width="895" height="895" transform="translate(721 432.08)"/>
+  <rect id="Rectangle_5" data-name="Rectangle 5" class="cls-1" width="24" height="912" transform="translate(1768.681 60.782) rotate(-43)"/>
+  <rect id="Rectangle_6" data-name="Rectangle 6" class="cls-1" width="24" height="912" transform="translate(1729.867 83.441) rotate(-43)"/>
+  <rect id="Rectangle_8" data-name="Rectangle 8" class="cls-1" width="24" height="912" transform="translate(1786.242 16.368) rotate(-43)"/>
+  <rect id="Rectangle_9" data-name="Rectangle 9" class="cls-1" width="24" height="912" transform="translate(1634.223 186.166) rotate(-43)"/>
+  <rect id="Rectangle_10" data-name="Rectangle 10" class="cls-1" width="24" height="912" transform="translate(1595.409 208.825) rotate(-43)"/>
+  <rect id="Rectangle_11" data-name="Rectangle 11" class="cls-1" width="24" height="912" transform="translate(1651.784 141.752) rotate(-43)"/>
+  <rect id="Rectangle_12" data-name="Rectangle 12" class="cls-1" width="24" height="912" transform="translate(1690.599 119.093) rotate(-43)"/>
+  <g id="Rectangle_13" data-name="Rectangle 13" class="cls-5" transform="translate(1181.14 1108.055) rotate(-14)">
+    <rect class="cls-6" width="327" height="163"/>
+    <rect class="cls-7" x="0.5" y="0.5" width="326" height="162"/>
+  </g>
+  <g id="Rectangle_14" data-name="Rectangle 14" class="cls-5" transform="matrix(-0.545, -0.839, 0.839, -0.545, 1014.197, 1096.091)">
+    <rect class="cls-6" width="327" height="163"/>
+    <rect class="cls-7" x="0.5" y="0.5" width="326" height="162"/>
+  </g>
+  <g id="Rectangle_15" data-name="Rectangle 15" class="cls-5" transform="matrix(0.995, -0.105, 0.105, 0.995, 1191.395, 630.823)">
+    <rect class="cls-6" width="326" height="140"/>
+    <rect class="cls-7" x="0.5" y="0.5" width="325" height="139"/>
+  </g>
+</svg>

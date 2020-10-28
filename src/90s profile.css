@@ -1,0 +1,76 @@
+body{
+  margin:0;
+}
+#root{
+  background-image: url("./Test/background2.png");
+  background-size: 100% 100%;
+  background-color: #FFFFBD;
+  width: 100vw;
+  height: 100vh;
+}
+.App{
+  display:grid;
+  grid-template-columns: 23.2% 53% auto;
+}
+.section1{
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100vh;
+  align-items: center;
+}
+#firstText{
+  writing-mode: sideways-lr;
+  font-family: 'Modern Sans';
+  font-size: 4rem;
+  margin-right: 0px;
+}
+.section2{
+font-family: 'Modern Sans';
+display:grid;
+grid-template-rows: 13% 72% auto;
+}
+.section2box{
+  grid-row: 2/3;
+  display:grid;
+  grid-template-columns: repeat(5,20%);
+  grid-template-rows: 10% repeat(10,10%);
+}
+#name{
+font-size: 2rem;
+grid-column: 1/2;
+justify-self: right;
+
+}
+#item{
+font-size: 4rem;
+grid-column: 4/5;
+grid-row: 3/4;
+}
+#item2{
+font-size: 4rem;
+grid-column: 2/3;
+grid-row: 5/6;
+}
+#item3{
+  font-size: 4rem;
+  grid-row: 8/9;
+  grid-column: 4/5;
+  }
+#item2:hover,#item:hover,#item3:hover{
+  background-color: rgba(230, 230, 250, 0.116);
+  color: hotpink;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+.section3{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  align-items: center;
+}
+#thirdText{
+  writing-mode: sideways-rl;
+  font-family: 'Modern Sans';
+  font-size: 4rem;
+  margin-left: 0px;
+}

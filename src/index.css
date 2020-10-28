@@ -1,0 +1,626 @@
+body{
+    margin:0;
+    width:100%;
+    font-size: 1vw;
+    display: block;
+    font-family: open sans;
+}
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++Nav Bar+++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+#root{
+    width:100%;
+}
+.NavBar{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 4vh;
+    background-color: white;
+}
+.NavName{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: "Alex Brush"; 
+    font-size: 2rem;
+    color: #1DD0CE;
+    letter-spacing: 2.5px;
+    padding-left: 4%;
+}
+.NavSocialMedia{
+
+}
+.NavLinks{
+    color: #0E9594;
+    display:grid;
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: repeat(3, 33.333333333%);
+    padding: 0;
+    margin: 0px;
+}
+.NavLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8em;
+    font-family: Open Sans;
+}
+.NavLink:hover{
+    background-color: #F5DFBB;
+    cursor: pointer;
+    transition: .6s ease-in-out;
+    color:white;
+    background-color: #0E9594;
+}
+@media (max-width:1000px){
+    .NavBar{
+        display: grid;
+        width: 100%;
+        grid-template-columns:50% 50%;
+        grid-template-rows: 4vh;
+        background-color: white;
+        position: fixed;
+    }
+    .NavLink{
+        font-size: 1rem;
+    }
+    .NavLinks{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+}
+@media (max-width:600px){
+    .NavName{
+        font-size: 1rem;
+    }
+
+    .NavLink{
+        font-size: .8rem;
+    }
+}
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++ABOUT Page++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+
+.AboutContainer{
+    display:grid;
+    width:100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 110vh;
+}
+.AboutProfile{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-color: #0E9594;
+    background: url(./newProfileAssets/index.png)no-repeat center bottom #0E9594;
+}
+.AboutDescription{
+    background-color:#F5DFBB;
+    padding-left:30px;
+    font-family: Open sans;
+    font-style: bold;
+    grid-column: 2/3;
+    max-height: auto;
+}
+.AboutDescriptionTitle{
+    color:#0E9594;
+    font-size: 4rem;
+    font-family: Open sans Extrabold;
+}
+.AboutDescriptionBody{
+    font-size: 2.5rem;
+}
+.AboutWhatIDoContainer{
+    display: grid;
+    grid-template-rows: 20vh repeat(5,20%);
+    grid-template-columns: repeat(3, 33%);
+    grid-column: 1/3;
+}
+.AboutWhatIDoTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/4;
+}
+.AboutWhatIDoTitle p{
+    font-size:4rem;
+    background-color: #a40606;
+    background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+    padding:10px;
+    border-radius: 30px;
+    color:white;
+    font-family: open sans;
+}
+.AboutWhatIDoItemList{
+    padding-left: 1rem;
+    justify-self: center;
+    font-family: open sans;
+    font-size: 2rem;
+}
+.AboutWhatIDoItemList p{
+    font-size: 3rem;
+    color:#0E9594;
+}
+.AboutWhatIDoItemList li::marker{
+    color:#F2542D;
+}
+.AboutWhatIDoItemList li:hover{
+    color:#0E9594;
+    cursor: url(cursor.cur),auto;
+}
+.AboutWhatIDoItemList li:nth-child(even)::marker{
+    color:#0E9594;
+}
+.AboutWhatIDoItemList li:nth-child(even):hover{
+    color:#F2542D;
+}
+#AboutWhatIDoItemListLearning{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+@media (max-width: 1000px) {
+    .AboutContainer{
+        display:grid;
+        width:100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% auto;
+    }
+    .AboutProfile{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        height: 500px;
+        background-color: #0E9594;
+        background: url(./newProfileAssets/index2.png)no-repeat center bottom #0E9594;
+    }
+    .AboutDescription{
+        background-color:#F5DFBB;
+        padding-left:30px;
+        font-family: Open sans;
+        font-style: bold;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    
+    }
+}
+@media (max-height: 600px) {
+    .AboutProfile{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        height: 300px;
+        background-color: #0E9594;
+        background: url(./newProfileAssets/index3.png)no-repeat center bottom #0E9594;}
+}
+@media (max-width: 750px) {
+    .AboutWhatIDoContainer{
+        display: flex;
+        flex-direction: column;
+        grid-template-rows: 300px;
+        grid-template-columns: 50vw 50vw;
+        grid-column: 1/2;
+    }
+    .AboutWhatIDoTitle p{
+        font-size:3rem;
+        background-color: #a40606;
+        background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+        padding:5px;
+        border-radius: 30px;
+        color:white;
+        font-family: open sans;
+    }
+    .AboutWhatIDoItemList{
+        padding-left: 1rem;
+        justify-self: left;
+        font-family: open sans;
+        font-size: 2rem;
+        margin-left: 40px;
+        grid-column: 1/2;
+    }
+    .AboutWhatIDoItemList :nth-child(even){
+        grid-column: 3/4;
+    }
+    .AboutWhatIDoItemList p{
+        font-size: 3rem;
+        color:#0E9594;
+    }
+    .AboutWhatIDoItemList li::marker{
+        font-size: 40px;
+        color:#F2542D;
+    }
+    #AboutWhatIDoItemListLearning{
+    }
+}
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++Project Page+++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+.ProjectHome{
+    background-color: #0E9594;
+    Display:grid;
+    grid-template-rows: 90vh;
+}
+.ProjectTileHolder{
+    display:grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: repeat(3, 33.333333333333333333333333333333333333333333333%);
+}
+.ProjectTileHolder :nth-child(even){
+    background-color:#F5DFBB ;
+}
+.ProjectTile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: open sans;
+    background-size: cover;
+}
+.ProjectTile a{
+    border:2px solid #F2542D;
+    background-color:#F5DFBB;
+    border-radius: 50px;
+    padding:2.5%;
+}
+
+#slitScan{
+    background-image: url(./newProfilePages/ProjectPhotos/Nature.jpeg) ;
+}
+#DogHotel{
+    background-image: url(./newProfilePages/ProjectPhotos/DogHotel.PNG)
+}
+#OldProfile{
+    background-image: url(./newProfilePages/ProjectPhotos/oldProfile.PNG);
+}
+#PoemFinder{
+    background-image: url(./newProfilePages/ProjectPhotos/poemFinder.PNG);
+}
+#GeneticAlgorithm{
+    background-image: url(./newProfilePages/ProjectPhotos/GeneticAlgorithm.PNG);
+}
+#github{
+    background-image: url(./newProfilePages/ProjectPhotos/github.PNG);
+}
+#PhotographyWebsite{
+    background-image: url(./newProfilePages/ProjectPhotos/PhotographyWebsite.PNG);
+}
+#repl{
+    background-image: url(./newProfilePages/ProjectPhotos/repl.PNG);
+}
+@media (max-width: 1000px) {
+    .ProjectTileHolder{
+        display:grid;
+        grid-template-rows: repeat(6, 30vh);
+        grid-template-columns: 100%;
+    }
+    .ProjectHome{
+        background-color: #0E9594;
+        Display:grid;
+        grid-template-rows: auto;
+    }
+}
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++Contact+++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+.ContactContainer{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% auto;
+    background-color:  #0E9594;
+    color:white;
+    height: 90vh;
+}
+.ContactTitle{
+    grid-column: 1/3;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:40px;
+    font-size: 10em;
+    font-family: pachom script;
+    text-shadow: #1e4242 10px 5px;
+}
+.ContactDescription{
+    padding-left: 10%;
+    font-size: 2.5rem;
+}
+.ContactForm{
+    padding-left: 5%;
+}
+.ContactForm input,.ContactForm textarea {
+    color:rgb(75, 75, 75);
+    font-family: open sans;
+    border:none;
+    font-size: 3rem;
+    width: 70%;
+    margin-top: 5px;
+    resize: none;
+}
+@media (max-width: 1000px) {
+    .ContactContainer{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 30% 30% 9%;
+        background-color:  #0E9594;
+        color:white;
+        height: auto;
+    }
+    .ContactForm{
+        padding-left: 5%;
+        grid-column: 1/3;
+    }
+    .ContactForm form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .ContactForm input,.ContactForm textarea {
+        color:rgb(75, 75, 75);
+        font-family: open sans;
+        border:none;
+        font-size: 3rem;
+        width: 70%;
+        margin: 5px;
+        resize: none;
+    }
+}
+@media (max-height: 1100px) {
+    .ContactDescription{
+        font-size: 2.3rem;
+    }
+}
+@media (max-height: 900px) {
+    .ContactDescription{
+        font-size: 1.8rem;
+        margin-bottom: 5%;
+    }
+    .ContactForm input,.ContactForm textarea {
+        color:rgb(75, 75, 75);
+        font-family: open sans;
+        border:none;
+        font-size: 2rem;
+        width: 70%;
+        margin-top: 5px;
+        resize: none;
+    }
+}
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++Footer++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+.FooterContainer{
+    display:grid;
+    background-color:#F2542D;
+    width:100%;
+    grid-column: 1/3;
+    grid-template-rows: 6vh;
+    grid-template-columns: 10% 30% 10% 30% 20%;
+}
+.Copyright{
+    display:flex;
+    align-items: flex-end;
+    font-size: .8rem;
+    padding-left: 3%;
+}
+.FooterSocialMediaLinks{
+    grid-column: 5/6;
+    display:grid;
+    grid-template-columns: repeat(4,25%);
+    justify-content: center;
+    align-items: center;
+}
+.FooterSocialMediaLink:hover{
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+.FooterSocialMediaLink{
+    display:flex;
+    justify-content: center;
+    border-radius: 50px;
+}
+.FooterSocialMediaLink img{
+    display:flex;
+    justify-content: center;
+    height: 90%;
+    max-height: 5vh;
+    width: 90%;
+    object-fit: scale-down;
+}
+@media (max-width:1000px){
+    .FooterContainer{
+        display:grid;
+        grid-template-rows: 8vh;
+        grid-template-columns: 30% 10% 10% 10% 40%;
+    }
+    .FooterSocialMediaLink{
+        display:flex;
+        justify-content: center;
+        border-radius: 50px;
+    }
+    .FooterSocialMediaLink img{
+        display:flex;
+        justify-content: center;
+        height: 90%;
+        max-height: 7vh;
+        width: 90%;
+        object-fit: scale-down;
+    }
+}
+@media (max-width:600px){
+    .FooterContainer{
+        grid-template-columns: 50% 1% 1% 1% 45%;
+
+    }
+}
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++Slit Scan Container++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+.SlitScanContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 33.333333333%);
+    grid-template-rows: repeat(10, 10%);
+    font-family:open sans;
+    font-size: 1.7rem;
+}
+.SlitScanTitle{
+    grid-column: 1/4;
+    grid-row:1/3;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.SlitScanDescription{
+    grid-column: 2/4;
+    padding:5%;
+}
+#SlitScanWill{
+    grid-column: 1/2;
+    grid-row: 3/8;
+    max-width: 100%;
+    padding:5%;
+}
+#SlitScanWillVid{
+    grid-column: 1/2;
+    grid-row: 6/10;
+}
+.SlitScanCard{
+    grid-column: 1/3;
+}
+.SlitScanCard img{
+    max-height: 60vh;
+    object-fit: scale-down;
+}
+.SlitScanCard h2{
+    color:white;
+    font-size: 2rem;
+}
+.carousel{
+    display: flex;
+    justify-content: center;
+}
+.carousel-root{
+    max-width: 100%;
+}
+.slider-wrapper{
+    background-color: #1e4242;
+}
+.SlitScanEndNotes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    font-size: 2rem;
+    /* padding: 5% 7% 5%; */
+}
+.SlitScanEndNotes img{
+    object-fit: scale-down;
+    height: 100%;
+}
+.SlitScanEndNotes span{
+    padding:5px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.SlitScanEndNotes a{
+    text-align: center;
+    background-color: #F2542D;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .6s;
+}
+.SlitScanEndNotes a img{
+    height: 2rem;
+}
+.SlitScanEndNotes a:hover{
+    color:white;
+    background-color: #b84022;
+}
+#SlitScanCode{
+    text-align: left;
+    /* padding-left: 5rem; */
+    color: black;
+    background-color: rgb(213, 213, 213);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+#SlitScanCode li{
+    color: black;
+}
+#SlitScanCode p{
+    color: red;
+}
+
+@media (max-width:1000px){
+    .SlitScanContainer{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    max-width: 100%;
+}
+    .SlitScanTitle{
+    grid-column: 1/2;
+    grid-row:2/3;
+    margin-top: 50px;
+    display: flex;
+    font-size: 2rem;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+    .SlitScanDescription{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding-left: 5%;
+}
+    #SlitScanWill{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    max-width: 95vw;
+    /* padding:5%; */
+}
+    .SlitScanWillVid{
+        width: 90%;
+        padding: 0px;
+        margin:0px;
+    }
+    .SlitScanEndNotes{
+        grid-column: 1/2;
+        max-width: 90%;
+        padding-left: 5%;
+        display: block;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+}
+    .SlitScanEndNotes p{
+    grid-column: 1/2;
+}
+    .SlitScanEndNotes img{
+    object-fit: scale-down;
+    max-width: 90%;
+}
+    #SlitScanCode{
+    font-size: .9rem;
+}
+
+}
+@media (max-width:500px){
+    #SlitScanWill iframe{
+        width:300px;
+        padding:0%;
+        margin:0%
+    }
+    .SlitScanEndNotes iframe{
+        width:90%;
+    }
+    #SlitScanCode{
+        font-size: .7rem;
+    }
+    .thumbs{
+        max-width: 90%;
+    }
+}
