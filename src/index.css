@@ -4,7 +4,10 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  } 
 body{
     margin:0;
     width:100%;
