@@ -5,6 +5,12 @@
     font-size: 100%;
     max-width: 100vw;
 }
+@font-face {
+    font-family: 'Alex Brush';
+    src: url('./newProfileAssets/AlexBrush-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 a:focus, a:hover, a:visited, a:link, a:active, a{
     color: inherit;
     text-decoration: inherit;
