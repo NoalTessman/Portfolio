@@ -17,7 +17,7 @@ export default class App extends Component {
                     <Route path="/Contact" component={Contact}/>
                     <Route exact path="/Projects" component={Projects}/>
                     <Route path="/Tools" component={Tools}/>
-                    <Route path="/Projects/SlitScan" component={SlitScan}/>
+                    <Route path="/SlitScan" component={SlitScan}/>
                 </Switch>
             </div>
             </BrowserRouter>
