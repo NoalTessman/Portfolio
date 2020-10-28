@@ -12,6 +12,13 @@ body{
     display: block;
     font-family: open sans;
 }
+@font-face {
+    font-family: 'Alex Brush';
+    src: url('./fonts/alexbrush-regular-webfont.woff2') format('woff2'),
+         url('./fonts/alexbrush-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* ++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++Nav Bar+++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++ */

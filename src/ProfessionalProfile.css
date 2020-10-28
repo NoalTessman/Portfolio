@@ -14,9 +14,11 @@
 }
 @font-face {
     font-family: 'Alex Brush';
-    src: url('./newProfileAssets/AlexBrush-Regular.ttf') format('ttf');
+    src: url('./fonts/alexbrush-regular-webfont.woff2') format('woff2'),
+         url('./fonts/alexbrush-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
 a:focus, a:hover, a:visited, a:link, a:active, a{
     color: inherit;
