@@ -117,7 +117,7 @@ body{
     color:white;
     background-color: #0E9594;
 }
-@media (max-width:1000px){
+@media only screen and (max-width:1000px){
     .NavBar{
         display: -ms-grid;
         display: grid;
@@ -149,7 +149,7 @@ body{
         grid-row: 1/2;
     }
 }
-@media (max-width:600px){
+@media only screen and (max-width:600px){
     .NavName{
         font-size: 1rem;
     }
@@ -357,7 +357,7 @@ body{
     -ms-grid-row-span: 1;
     grid-row: 4/5;
 }
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     .AboutContainer{
         display:-ms-grid;
         display:grid;
@@ -400,7 +400,7 @@ body{
     
     }
 }
-@media (max-height: 600px) {
+@media only screen and (max-height: 600px) {
     .AboutProfile{
         -ms-grid-row: 1;
         -ms-grid-row-span: 1;
@@ -412,7 +412,7 @@ body{
         background-color: #0E9594;
         background: url(./newProfileAssets/index3.png)no-repeat center bottom #0E9594;}
 }
-@media (max-width: 750px) {
+@media only screen and (max-width: 750px) {
     .AboutWhatIDoContainer{
         display: -webkit-box;
         display: -ms-flexbox;
@@ -563,7 +563,7 @@ body{
 #repl{
     background-image: url(./newProfilePages/ProjectPhotos/repl.PNG);
 }
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     .ProjectTileHolder{
         display:-ms-grid;
         display:grid;
@@ -669,7 +669,7 @@ body{
     margin-top: 5px;
     resize: none;
 }
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     .ContactContainer{
         display:-ms-grid;
         display:grid;
@@ -728,12 +728,12 @@ body{
         resize: none;
     }
 }
-@media (max-height: 1100px) {
+@media only screen and (max-height: 1100px) {
     .ContactDescription{
         font-size: 2.3rem;
     }
 }
-@media (max-height: 900px) {
+@media only screen and (max-height: 900px) {
     .ContactDescription{
         font-size: 1.8rem;
         margin-bottom: 5%;
@@ -837,7 +837,7 @@ body{
     -o-object-fit: scale-down;
        object-fit: scale-down;
 }
-@media (max-width:1000px){
+@media only screen and (max-width:1000px){
     .FooterContainer{
         display:-ms-grid;
         display:grid;
@@ -889,7 +889,7 @@ body{
            object-fit: scale-down;
     }
 }
-@media (max-width:600px){
+@media only screen and (max-width:600px){
     .FooterContainer{
         -ms-grid-columns: 50% 1% 1% 1% 45%;
         grid-template-columns: 50% 1% 1% 1% 45%;
@@ -1162,7 +1162,7 @@ body{
     color: red;
 }
 
-@media (max-width:1000px){
+@media only screen and (max-width:1000px){
     .SlitScanContainer{
     display: -ms-grid;
     display: grid;
@@ -1246,7 +1246,7 @@ body{
 }
 
 }
-@media (max-width:500px){
+@media only screen and (max-width:500px){
     #SlitScanWill iframe{
         width:300px;
         padding:0%;
