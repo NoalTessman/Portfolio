@@ -9,9 +9,9 @@ export default class ProfessionalProfile extends Component {
                     <div className="homeTitle">
                         <p className="homeName">Noal Tessman</p>
                         <p className="homeTitles">
-                            <p>╫Software Developer </p>
-                            <p>╫Web Designer </p>
-                            <p>╫Weather Nerd</p>
+                            <p>Software Developer </p>
+                            <p>Web Designer </p>
+                            <p>Weather Nerd</p>
                         </p>
                     </div>
                     <div className="homeLinks">

@@ -8,10 +8,12 @@
     "@testing-library/user-event": "^7.2.1",
     "emailjs-com": "^2.6.3",
     "react": "^16.13.1",
+    "react-alert": "^7.0.2",
+    "react-alert-template-basic": "^1.0.0",
     "react-dom": "^16.13.1",
     "react-responsive-carousel": "^3.2.10",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

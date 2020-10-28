@@ -1,19 +1,18 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import { useAlert } from "react-alert"
 
 export default function ContactUs() {
-
-    function sendEmail(e){
-        console.log("this works, just turning it off for now so I don't hit the quota")
+alert = useAlert();
+function sendEmail(e){
         e.preventDefault();
 
          emailjs.sendForm('gmail', 'Testing', e.target, 'user_HNJQYRfuuvOlzm6OR6IKn')
          .then((result) => {
-             console.log(result.text);
+            alert.show("Your message has been sent")
          }, (error) => {
-             console.log(error.text);
+            alert.show("The contact feature may be down, I will fix this ASAP, for the time being, you can use the social media links below to contact me")
          });
-         console.log("Are you here?")
         e.target.reset()
 }
   return (
