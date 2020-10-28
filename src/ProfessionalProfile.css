@@ -18,7 +18,18 @@
          url('./fonts/alexbrush-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+}
+@font-face {
+    font-family: 'Open Sans';
+    src:url('./fonts/OpenSans-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src:url('./fonts/OpenSans-Regular-webfont.woff') format('woff');
+    font-weight: light;
+    font-style: normal;
 }
 a:focus, a:hover, a:visited, a:link, a:active, a{
     color: inherit;
@@ -105,13 +116,17 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
     margin:0px;
     color:#FFA35D;
     font-size: 1rem;
-    font-family: "8-bit Operator+ SC";
+    font-family: "open sans";
+    padding-left: 10px;
+}
+.homeTitles span{
+    font-weight: bold;
 }
 .homeLinks{
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    font-family: "8-bit Operator+ SC";
+    font-family: "open sans";
     display:-ms-grid;
     display:grid;
     font-size: 4rem;
@@ -142,7 +157,7 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding:4px;
+    padding:10px;
 }
 #homeLinkText:hover{
     border:5px solid #FFA35D;

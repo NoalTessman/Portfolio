@@ -31,6 +31,12 @@ body{
     font-weight: light;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Lake';
+    src:url('./fonts/lakerg__-webfont.woff2') format('woff2');
+    font-weight: light;
+    font-style: normal;
+}
 /* ++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++Nav Bar+++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++ */
@@ -336,7 +342,6 @@ body{
 }
 .AboutWhatIDoItemList li:hover{
     color:#0E9594;
-    cursor: url(cursor.cur),auto;
 }
 .AboutWhatIDoItemList li:nth-child(even)::marker{
     color:#0E9594;
@@ -644,7 +649,8 @@ body{
             justify-content: center;
     padding-top:40px;
     font-size: 10em;
-    font-family: "Alex Brush";
+    font-family: "Open Sans";
+    font-weight: bolder;
     text-shadow: #1e4242 10px 5px;
 }
 .ContactDescription{
