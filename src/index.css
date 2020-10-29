@@ -612,6 +612,16 @@ body{
         -ms-grid-rows: auto;
         grid-template-rows: auto;
     }
+    .ProjectTile a{
+        border:2px solid #F2542D;
+        background-color:#F5DFBB;
+        border-radius: 50px;
+        padding:2.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
 }
 /* ++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++Contact+++++++++++++++ */
