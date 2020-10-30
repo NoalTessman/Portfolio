@@ -30,8 +30,14 @@ body{
 }
 @font-face {
     font-family: 'Open Sans';
-    src:url('./fonts/OpenSans-Regular-webfont.woff') format('woff');
-    font-weight: light;
+    src:url('./fonts/OpenSans-Light-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src:url('./fonts/OpenSans-Semibold-webfont.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
 }
 @font-face {
@@ -108,7 +114,7 @@ body{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: .8em;
+    font-size: 1.2em;
     font-family: Open Sans;
 }
 .NavLink:hover{
@@ -141,7 +147,7 @@ body{
         -ms-grid-column:2;
     }
     .NavLink{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .NavLinks{
         -ms-grid-column: 2;
@@ -172,7 +178,7 @@ body{
     -ms-grid-columns: 50% 50%;
     grid-template-columns: 50% 50%;
     -ms-grid-rows: auto 110vh;
-    grid-template-rows: auto 110vh;
+    grid-template-rows: auto auto auto;
 }
 
 .AboutContainer > *:nth-child(1){
@@ -200,6 +206,8 @@ body{
     grid-row: 1/2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
+    height: 100%;
+    max-width: 100%;
     grid-column: 1/2;
     background-color: #0E9594;
     background: url(./newProfileAssets/index.png)no-repeat center bottom #0E9594;
@@ -386,6 +394,8 @@ body{
         -ms-grid-column-span: 1;
         grid-column: 1/2;
         height: 500px;
+        max-width: 100%;
+        object-fit: scale-down;
         background-color: #0E9594;
         background: url(./newProfileAssets/index2.png)no-repeat center bottom #0E9594;
     }
@@ -488,139 +498,83 @@ body{
 /* +++++++++++++Project Page+++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++ */
 .ProjectHome{
-    background-color: #0E9594;
-    Display:grid;
-    -ms-grid-rows: 90vh;
-    grid-template-rows: 90vh;
+    background-color: #0e9594;
+    background-image: linear-gradient(160deg, #0e9594 0%, #1dd0ce 100%);
+    height: 150%;
 }
 .ProjectTileHolder{
     display:-ms-grid;
     display:grid;
-    -ms-grid-rows: 50% 50%;
-    grid-template-rows: 50% 50%;
-    -ms-grid-columns: (33.333333333333333333333333333333333333333333333%)[3];
-    grid-template-columns: repeat(3, 33.333333333333333333333333333333333333333333333%);
-}
-.ProjectTileHolder > *:nth-child(1){
-    -ms-grid-row:1;
-    -ms-grid-column:1;
-}
-.ProjectTileHolder > *:nth-child(2){
-    -ms-grid-row:1;
-    -ms-grid-column:2;
-}
-.ProjectTileHolder > *:nth-child(3){
-    -ms-grid-row:1;
-    -ms-grid-column:3;
-}
-.ProjectTileHolder > *:nth-child(4){
-    -ms-grid-row:2;
-    -ms-grid-column:1;
-}
-.ProjectTileHolder > *:nth-child(5){
-    -ms-grid-row:2;
-    -ms-grid-column:2;
-}
-.ProjectTileHolder > *:nth-child(6){
-    -ms-grid-row:2;
-    -ms-grid-column:3;
-}
-.ProjectTileHolder :nth-child(even){
-    background-color:#F5DFBB ;
+    height: 100%;
+    grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
 }
 .ProjectTile{
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     font-size: 2rem;
     font-family: open sans;
-    background-size: cover;
+    background-color: white;
+    border-radius: 20px;
+    margin:5%;
+    padding-bottom: 30px;
+    transition: .5s;
 }
-.ProjectTile a{
-    border:2px solid #F2542D;
-    background-color:#F5DFBB;
-    border-radius: 50px;
-    padding:2.5%;
+.ProjectTile:hover{
+    background-color: rgb(224, 224, 224);
 }
+.ProjectTileText{
+    padding:0% 5% 0%;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    align-items: center;
+}
+#ProjectTileImage{
+    max-width: 100%;
+    height: 500px;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.ProjectTileTitle{
+    font-weight: bold;
+    grid-row: 1/2;
+    color: #0e9594;
 
-#slitScan{
-    background-image: url(./newProfilePages/ProjectPhotos/Nature.jpeg) ;
 }
-#DogHotel{
-    background-image: url(./newProfilePages/ProjectPhotos/DogHotel.PNG)
-}
-#OldProfile{
-    background-image: url(./newProfilePages/ProjectPhotos/oldProfile.PNG);
-}
-#PoemFinder{
-    background-image: url(./newProfilePages/ProjectPhotos/poemFinder.PNG);
-}
-#GeneticAlgorithm{
-    background-image: url(./newProfilePages/ProjectPhotos/GeneticAlgorithm.PNG);
-}
-#github{
-    background-image: url(./newProfilePages/ProjectPhotos/github.PNG);
-}
-#PhotographyWebsite{
-    background-image: url(./newProfilePages/ProjectPhotos/PhotographyWebsite.PNG);
-}
-#repl{
-    background-image: url(./newProfilePages/ProjectPhotos/repl.PNG);
+.ProjectTileDescription{
+    padding: 0px;
+    grid-row: 2/3;
+    margin:0px;
+    font-size: 1.3rem;
+    font-family: "Open sans";
+    font-weight: lighter;
+    color: rgb(104, 104, 104);
 }
 @media only screen and (max-width: 1000px) {
     .ProjectTileHolder{
         display:-ms-grid;
         display:grid;
-        -ms-grid-rows: (30vh)[6];
-        grid-template-rows: repeat(6, 30vh);
-        -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
+        -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
     }
-    .ProjectTileHolder > *:nth-child(1){
-        -ms-grid-row:1;
-        -ms-grid-column:1;
-    }
-    .ProjectTileHolder > *:nth-child(2){
-        -ms-grid-row:2;
-        -ms-grid-column:1;
-    }
-    .ProjectTileHolder > *:nth-child(3){
-        -ms-grid-row:3;
-        -ms-grid-column:1;
-    }
-    .ProjectTileHolder > *:nth-child(4){
-        -ms-grid-row:4;
-        -ms-grid-column:1;
-    }
-    .ProjectTileHolder > *:nth-child(5){
-        -ms-grid-row:5;
-        -ms-grid-column:1;
-    }
-    .ProjectTileHolder > *:nth-child(6){
-        -ms-grid-row:6;
-        -ms-grid-column:1;
-    }
-    .ProjectHome{
+    .ProjectTileHolder{
         background-color: #0E9594;
-        Display:grid;
-        -ms-grid-rows: auto;
-        grid-template-rows: auto;
+        height: 80%;
     }
-    .ProjectTile a{
-        border:2px solid #F2542D;
-        background-color:#F5DFBB;
-        border-radius: 50px;
-        padding:2.5%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.2rem;
+    
+}
+@media only screen and (max-width: 600px) {
+    .ProjectTileHolder{
+        display:-ms-grid;
+        display:grid;
+        -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    }
+    .ProjectTile{
+        margin-top:5vh;
     }
 }
 /* ++++++++++++++++++++++++++++++++++++++ */
@@ -699,6 +653,9 @@ body{
         background-color:  #0E9594;
         color:white;
         height: auto;
+    }
+    .ContactTitle{
+        text-shadow: #1e4242 3px 3px;
     }
     .ContactContainer > *:nth-child(1){
         -ms-grid-row:1;
