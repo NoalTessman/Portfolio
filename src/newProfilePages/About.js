@@ -12,17 +12,9 @@ export default class About extends Component {
                         <p class="AboutDescriptionTitle">About</p>
                         <p class="AboutDescriptionBody"> 
                             <p>Hi, I'm Noal.</p> 
-                            I've been in the technology world enough
-                            to know many different facets of what makes 
-                            a person exciting and pleasant to work with. I have many 
-                            years of experience in IT and 
-                            coding, along with knowledge of a wide array tools and programs to make that easier.
+                            I've been in the technology world enough to know many different facets of what makes a person exciting and pleasant to work with. I have many years of experience in IT and coding, along with knowledge of a wide array tools and programs to make that easier.
                             <p>
-                            As a programmer and IT support specialist with several years of experience scripting, coding, and 
-                            Software/Hardware knowledge, I am adept at working with many different languages to get the job done.
-                            Additionally I aim to make sure the work environment is fun and exciting.
-                            My goal is to add demonstratable value to your company through coding effeciently and using modern tools 
-                            and practices to do so.
+                            As a programmer and IT support specialist with several years of experience scripting, coding, and Software/Hardware knowledge, I am adept at working with many different languages to get the job done. Additionally, I aim to make sure the work environment is fun and exciting. My goal is to add demonstratable value to your company through coding efficiently and using modern tools and practices to do so.
                             </p> 
                         </p>
                     </div>
@@ -76,6 +68,9 @@ export default class About extends Component {
                             <li>Data Science</li>
                             <li>Docker </li>
                         </div>
+                    </div>
+                    <div className="ProjectResume">
+                        <a href="./ProjectAssets/Resume.pdf" target="_blank" download><span>My Resume</span></a>
                     </div>
                 <Footer />
                 </div>

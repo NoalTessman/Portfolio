@@ -7,7 +7,7 @@ export default class ProjectTileRouter extends Component {
         return (
             <div className="ProjectTile">
                 <Link to={this.props.link} alt={this.props.id}>
-                <div className="ProjectTileImage">
+                <div>
                     <img src={this.props.image} id="ProjectTileImage"/>
                 </div>
                 </Link>
