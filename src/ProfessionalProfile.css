@@ -7,14 +7,7 @@
 @viewport {
     width: device-width ;
     zoom: 1.0 ;
-  } 
-#root{
-    margin:0;
-    padding:0px;
-    border: 0px;
-    font-size: 100%;
-    max-width: 100vw;
-}
+  }
 @font-face {
     font-family: 'Alex Brush';
     src: url('./fonts/alexbrush-regular-webfont.woff2') format('woff2'),
@@ -39,142 +32,75 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
     text-decoration: inherit;
 }
 .home{
-    background: url("./newProfileAssets/background.svg") no-repeat center bottom fixed;
+    background: url("./newProfileAssets/openorange.jpg") no-repeat 50% 60%;
     width: 100%;
     height: 100vh;
-    max-width: 100%;
-    max-height: 100%;
     background-size: cover;
-    display:-ms-grid;
     display:grid;
-    -ms-grid-rows: 20vh 50vh 10vh;
-    grid-template-rows: 20vh 50vh 10vh;
-    -ms-grid-columns: 5vh auto;
-    grid-template-columns: 5vh auto;
-
-}
-.home > *:nth-child(1){
-    -ms-grid-row:1;
-    -ms-grid-column:1;
-
-}
-.home > *:nth-child(2){
-    -ms-grid-row:1;
-    -ms-grid-column:2;
-
-}
-.home > *:nth-child(3){
-    -ms-grid-row:2;
-    -ms-grid-column:1;
-
-}
-.home > *:nth-child(4){
-    -ms-grid-row:2;
-    -ms-grid-column:2;
-
-}
-.home > *:nth-child(5){
-    -ms-grid-row:3;
-    -ms-grid-column:1;
-
-}
-.home > *:nth-child(6){
-    -ms-grid-row:3;
-    -ms-grid-column:2;
+    grid-template-rows: 20vh 40vh 0px 40vh;
+    background-color: #e0fffe;
 
 }
 .homeTitle{
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
     grid-row: 1/2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
+    grid-column: 1/2;
     width: 100%;
     height: 100%;
     max-width: 100%;
     max-height: 100%;
 }
 .homeName{
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
     grid-row: 1/2;
-    color:#1DD0CE;
-    font-size: 8em;
-    font-family: "Alex Brush" ;
+    color:#39c2da;
+    font-size: 12rem;
+    font-family: "Arial" ;
     margin:0%;
 }
 .homeTitles{
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
     grid-row: 2/3;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    margin-top: -2rem;
     padding:0px;
-    padding-left: 30px;
+    flex-direction: column;
 }
 .homeTitles p{
     margin:0px;
-    color:#FFA35D;
-    font-size: 1rem;
+    color: white;
+    font-size: 4rem;
+    line-height: 5rem;
     font-family: "open sans";
     padding-left: 10px;
 }
-.homeTitles span{
-    font-weight: bold;
-}
 .homeLinks{
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
     font-family: "open sans";
-    display:-ms-grid;
-    display:grid;
     font-size: 4rem;
-    -ms-grid-columns: 500px auto;
-    grid-template-columns: 500px auto;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .homeLink{
-    color:#FFA35D;
+    color:#EC672C;
     display:-ms-grid;
     display:grid;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     justify-items: left;
+    padding-left: 2vw;
 }
 #homeLinkText{
-    border:5px solid #0E9594;
-    border-radius: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    border:5px solid #FDCE0B;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding:10px;
+    padding: 0px 1vw 0px;
 }
 #homeLinkText:hover{
-    border:5px solid #FFA35D;
-    -webkit-transition: ease-in-out .3s;
-    -o-transition: ease-in-out .3s;
-    transition: ease-in-out .3s;
-    color: #0E9594;
+    border:5px solid #EC672C;
+    transition: .2s;
+    color: white;
     cursor: pointer;
-    background-color: #F5DFBB;
 }
 @media (max-width: 1000px) {
 
     .home{
-        background: url("./newProfileAssets/background 2.svg") no-repeat center bottom fixed;
+        background: url("./newProfileAssets/openorange.jpg") no-repeat center bottom;
     background-size: cover;
     }
     .homeLink{
@@ -193,28 +119,95 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
                 flex-direction: column;
     }
 }
-@media (max-width: 600px) {
-    .homeLink{
-        font-size: 2rem;
+@media (max-width: 550px) {
+    .home{
+        display: grid;
+        grid-template-rows: 30vh 20vh 50vh ;
+        height: 100vh;
     }
     .homeName{
-        font-size: 2rem;
+        font-size: 4rem;
     }
-    .homeTitles{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        margin-top: 0px;
+    .homeLinks{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-top: 20vh;
+        justify-content: space-around;
+        height: 50vh;
+    }
+    .homeLink{
+        font-size: 1.3rem;
+        border-radius:0px;
+    }
+    #homeLinkText{
+        border-radius:0px;
+    }
+
+}
+@media (max-width: 450px) {
+    .home{
+        display: grid;
+        grid-template-rows: 10vh 10vh 30vh ;
+        height: 100vh;
+        background: url("./newProfileAssets/openorange.jpg") no-repeat 50% 60%;
+    }
+    .homeName{
+        font-size: 3rem;
 
     }
     .homeTitles p{
-        font-size: .6rem;
-        padding:0px;
-        margin:0px;
+    font-size: 1.5rem;
     }
     .homeLinks{
-    -ms-grid-columns:auto;
-    grid-template-columns:auto;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-top: 20vh;
+        justify-content: space-around;
+        height: 50vh;
+    }
+    .homeLink{
+        font-size: 1.5rem;
+        border-radius:0px;
+    }
+    #homeLinkText{
+        border-radius:0px;
+    }
+
+    
+}
+@media (max-width: 400px) {
+    .homeTitles p{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+}
+@media only screen and (max-height:700px) and (min-width:1000px){
+    .homeName{
+        font-size: 8rem;
+    }
+    .homeTitles p{
+        font-size: 1.5rem;
+    }
+    .homeLinks{
+    }
+    .homeLink{
+    }
+    #homeLinkText{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-height:500px) and (min-width:1000px){
+    .homeName{
+        font-size: 6rem;
+    }
+    .homeTitles p{
+        font-size: 1rem;
+    }
+    .homeLinks{
+    }
+    .homeLink{
+    }
+    #homeLinkText{
+        font-size: 1.7rem;
     }
 }

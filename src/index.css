@@ -56,35 +56,16 @@ body{
     display: -ms-grid;
     display: grid;
     width: 100%;
-    -ms-grid-columns: 40% 30% 30%;
     grid-template-columns: 40% 30% 30%;
-    -ms-grid-rows: 4vh;
-    grid-template-rows: 4vh;
+    grid-template-rows: 6vh;
     background-color: white;
-}
-.NavBar > *:nth-child(1){
-    -ms-grid-row:1;
-    -ms-grid-column:1;
-}
-.NavBar > *:nth-child(2){
-    -ms-grid-row:1;
-    -ms-grid-column:2;
-}
-.NavBar > *:nth-child(3){
-    -ms-grid-row:1;
-    -ms-grid-column:3;
+    position: fixed;
 }
 .NavName{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-family: "Alex Brush"; 
+    justify-content: left;
+    align-items: center;
+    font-family: "Open Sans"; 
     font-size: 2rem;
     color: #1DD0CE;
     letter-spacing: 2.5px;
@@ -506,13 +487,12 @@ body{
     display:-ms-grid;
     display:grid;
     height: 100%;
+    padding-top: 6vh;
     grid-template-rows: 1fr 1fr;
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
 }
 .ProjectTile{
-    display: -webkit-box;
-    display: -ms-flexbox;
     font-size: 2rem;
     font-family: open sans;
     background-color: white;
@@ -581,12 +561,16 @@ body{
         display:-ms-grid;
         display:grid;
         -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
     }
-    .ProjectTileHolder{
-        background-color: #0E9594;
-        height: 80%;
-    }
+    .ProjectTileDescription{
+        font-size: 1rem;
+}
+#ProjectTileImage{
+    height: 300px;
+    width: 100%;    
+}
     
 }
 @media only screen and (max-width: 600px) {
