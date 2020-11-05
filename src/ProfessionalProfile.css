@@ -38,8 +38,6 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
     background-size: cover;
     display:grid;
     grid-template-rows: 20vh 40vh 0px 40vh;
-    background-color: #e0fffe;
-
 }
 .homeTitle{
     grid-row: 1/2;
