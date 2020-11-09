@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
 import NavBar from "../NavBar"
 import Footer from "../Footer"
+import Headshot from "../newProfileAssets/Headshot.png"
 export default class About extends Component {
     render() {
         return (
             <div>
             <NavBar />
                 <div className="AboutContainer">
-                    <div className="AboutProfile"></div>
+                    <div className="AboutProfile">
+                        <img src={Headshot}/>
+                    </div>
                     <div className="AboutDescription">
                         <p class="AboutDescriptionTitle">About</p>
                         <p class="AboutDescriptionBody"> 

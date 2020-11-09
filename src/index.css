@@ -185,16 +185,20 @@ body{
     -ms-grid-column:2;
 }
 .AboutProfile{
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    height: 100%;
-    max-width: 100%;
     grid-column: 1/2;
-    background-color: #0E9594;
-    background: url(./newProfileAssets/index.png)no-repeat center bottom #0E9594;
+    grid-row: 1/2;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:#1DD0CE;
+}
+.AboutProfile img{
+    max-height: 90%;
+    max-width: 90%;
+    padding:5%;
+    position: static;
 }
 .AboutDescription{
     background-color:#fff4d6;
@@ -354,7 +358,15 @@ body{
     grid-row: 4/5;
 }
 @media only screen and (max-width: 1000px) {
-
+    .AboutProfile{
+    margin-top:5vh;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    }
+    .AboutProfile img{
+        height: 300px;
+    }
     .AboutDescription{
         margin-top:0px
 }
@@ -378,19 +390,6 @@ body{
         -ms-grid-row:2;
         -ms-grid-column:1;
     }
-    .AboutProfile{
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 1;
-        grid-row: 1/2;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 1;
-        grid-column: 1/2;
-        height: 500px;
-        max-width: 100%;
-        object-fit: scale-down;
-        background-color: #0E9594;
-        background: url(./newProfileAssets/index2.png)no-repeat center bottom #0E9594;
-    }
     .AboutDescription{
         background-color:#F5DFBB;
         padding-left:30px;
@@ -407,16 +406,7 @@ body{
 }
 @media only screen and (max-height: 600px) {
     .AboutProfile{
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 1;
-        grid-row: 1/2;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 1;
-        grid-column: 1/2;
-        height: 300px;
-        background-color: #0E9594;
-        background: url(./newProfileAssets/index3.png)no-repeat center bottom #0E9594;}
-}
+}}
 @media only screen and (max-width: 750px) {
     .AboutContainer{
         display:-ms-grid;
@@ -607,7 +597,8 @@ body{
     grid-template-rows: 30% auto;
     background-color:  #0E9594;
     color:white;
-    height: 90vh;
+    height: 89vh;
+    padding-top:5vh;
 }
 .ContactContainer > *:nth-child(1){
     -ms-grid-row:1;
