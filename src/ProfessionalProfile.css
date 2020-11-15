@@ -94,6 +94,24 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
     transition: .2s;
     color: white;
     cursor: pointer;
+}@media (max-width: 1400px) {
+    
+    .homeLink{
+        font-size: 3rem;
+    }
+    .homeName{
+        font-size: 5rem;
+    }
+    .homeTitle{
+        font-size: 1.2em;
+    }
+    .homeTitles{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
 }
 @media (max-width: 1000px) {
 
@@ -117,7 +135,7 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
                 flex-direction: column;
     }
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .homeTitles p{
         font-size: 1.5rem;
     }
@@ -188,35 +206,5 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
     .homeTitles p{
         font-size: 1rem;
         line-height: 2rem;
-    }
-}
-@media only screen and (max-height:700px) and (min-width:1200px){
-    .homeName{
-        font-size: 6rem;
-    }
-    .homeTitles p{
-        font-size: 1.5rem;
-    }
-    .homeLinks{
-    }
-    .homeLink{
-    }
-    #homeLinkText{
-        font-size: 2rem;
-    }
-}
-@media only screen and (max-height:500px) and (min-width:1200px){
-    .homeName{
-        font-size: 6rem;
-    }
-    .homeTitles p{
-        font-size: 1rem;
-    }
-    .homeLinks{
-    }
-    .homeLink{
-    }
-    #homeLinkText{
-        font-size: 1.7rem;
     }
 }
