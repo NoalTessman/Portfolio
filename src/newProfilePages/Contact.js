@@ -13,7 +13,7 @@ export default class Contact extends Component {
                         <div className="ContactDescription">
                             
                             <span>I am currently seeking a full-time position as a Front-End Developer,</span>
-                            <span>Thank you for visiting and I would be glad to get in contact with you.</span>
+                            <span>thank you for visiting and I would be glad to get in contact with you.</span>
                         </div>
                         <div className="LinkContainer">
 
