@@ -16,14 +16,12 @@ function sendEmail(e){
         e.target.reset()
 }
   return (
-    <div className="ContactForm">
-        <form onSubmit={sendEmail}>
-            <input type="text" placeholder="Name" name="name" />
-            <input type="text" placeholder="Email" name="email"/>
-            <input type="text" placeholder="Business/Company" name="business"/>
-            <textarea type="text" placeholder="Message" name="message"></textarea>
-            <input type="submit" value="Send" />
+        <form onSubmit={sendEmail} className="ContactForm">
+            <input id="FormBox" type="text" placeholder="Name" name="name" />
+            <input id="FormBox" type="text" placeholder="Email" name="email"/>
+            <input id="FormBox" type="text" placeholder="Business/Company" name="business"/>
+            <textarea id="FormBox" type="text" placeholder="Message" name="message"></textarea>
+            <input id="FormBox" class="FormSubmit" type="submit" value="Send" />
         </form>
-    </div>
   );
 }

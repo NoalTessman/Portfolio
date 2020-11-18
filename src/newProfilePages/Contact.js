@@ -10,22 +10,15 @@ export default class Contact extends Component {
             <div>
                 <NavBar />
                     <div className="ContactContainer">
-                        <div className="ContactTitle">Contact</div>
                         <div className="ContactDescription">
-                            <p>
-                            Want to get in touch so we can work 
-                            together? 
-                            </p>
-                            <p>
-                            I am currently seeking a full time oppurtunity for being a Front-End, 
-                            Full-stack(MERN), Software Developer, or a Web Designer.
-                            </p>
-                            <p>
-                            I would love to work with you or your 
-                            company.
-                            </p>
+                            
+                            <span>I am currently seeking a full-time position as a Front-End Developer,</span>
+                            <span>Thank you for visiting and I would be glad to get in contact with you.</span>
                         </div>
-                        <ContactForm />
+                        <div className="LinkContainer">
+
+                        </div>
+                        <div className="ContactForm"><ContactForm /></div>
                     </div>
                 <Footer />
             </div>

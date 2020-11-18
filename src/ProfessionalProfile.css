@@ -50,7 +50,7 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
 .homeName{
     grid-row: 1/2;
     color:#39c2da;
-    font-size: 12rem;
+    font-size: 12em;
     font-family: "Arial" ;
     margin:0%;
 }
@@ -63,8 +63,8 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
 .homeTitles p{
     margin:0px;
     color: white;
-    font-size: 4rem;
-    line-height: 5rem;
+    font-size: 2em;
+    line-height: 4rem;
     font-family: "open sans";
     padding-left: 10px;
 }
