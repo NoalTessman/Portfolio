@@ -49,15 +49,16 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
 }
 .homeName{
     grid-row: 1/2;
-    color:#39c2da;
+    color:#ffffff;
     font-size: 12em;
     font-family: "Arial" ;
     margin:0%;
+    padding-left:2%;
 }
 .homeTitles{
     grid-row: 2/3;
     display: flex;
-    padding:0px;
+    padding-left:2%;
     flex-direction: column;
 }
 .homeTitles p{

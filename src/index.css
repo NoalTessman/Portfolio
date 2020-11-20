@@ -192,13 +192,15 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color:#1DD0CE;
+    /* background-color:#1DD0CE; */
 }
 .AboutProfile img{
     max-height: 90%;
     max-width: 90%;
     padding:5%;
     position: static;
+    border-radius: 50%;
+
 }
 .AboutDescription{
     background-color:#fff4d6;
