@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import NavBar from "../NavBar"
 import Footer from "../Footer"
 import Headshot from "../newProfileAssets/Headshot.png"
+import Resume from "../newProfileAssets/Resume.pdf"
+
 export default class About extends Component {
     render() {
         return (
@@ -73,7 +75,7 @@ export default class About extends Component {
                         </div>
                     </div>
                     <div className="ProjectResume">
-                        <a href="./ProjectAssets/Resume.pdf" target="_blank" download><span>My Resume</span></a>
+                        <a href={Resume} target="_blank" download><span>My Resume</span></a>
                     </div>
                 <Footer />
                 </div>
